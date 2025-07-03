@@ -1,0 +1,17 @@
+{
+    "NavBar": [
+        "Main",
+        "About us",
+        "Services",
+        "Projects",
+        "Contacts"
+    ],
+    "HeroSection": {
+        "MainText": ["More than", "2 million", "square meters"],
+        "Text": "residential and commercial spaces over 20 years of design"
+    },
+    "HeroSectionMobile": {
+        "Text": "ALREADY TODAY",
+        "MainText": "WE IMPLEMENT IDEAS INTO A SIGNIFICANT ASSET"
+    }
+}
