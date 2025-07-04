@@ -81,10 +81,130 @@
   z-index: 10;
 }
 
+.services-card__content:hover .services-card__text {
+  opacity: 0;
+}
+
 .services-card__content:hover .services-card__img {
   opacity: 1;
 }
 
-.services-card__content:hover .services-card__text {
-  opacity: 0;
+.services__container_mobile {
+  margin: 50px auto 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 710px;
+  height: 450px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.services__serv_mobile {
+  padding-left: 30px;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.services__title_mobile {
+  color: black;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+@media (max-width: 560px) {
+  .services__container_mobile {
+    margin: 50px auto 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 710px;
+    height: 370px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0.7;
+  }
+
+  .services__serv_mobile {
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services__title_mobile {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .services-card__text {
+    font-size: 15px;
+    color: #000;
+    transition: opacity 0.3s ease;
+    display: block;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+@media (max-width: 426px) {
+  .services__container_mobile {
+    margin: 50px auto 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 710px;
+    height: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0.7;
+  }
+
+  .services__serv_mobile {
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .services__title_mobile {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .services-card__text {
+    font-size: 13px;
+    color: #000;
+    transition: opacity 0.3s ease;
+    display: block;
+    z-index: 2;
+    position: relative;
+  }
 }

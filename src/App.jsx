@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="overlay"></div>
+      {/* <div className="overlay"></div>
       <div className="background"></div>
       <div className="content">
         <NavBar />
@@ -22,7 +22,7 @@ function App() {
         <ServicesSection/>
         <ReviewsSection/>
         <Footer/>
-      </div>
+      </div> */}
     </>
   )
 }

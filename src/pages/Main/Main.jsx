@@ -13,7 +13,7 @@ export default function Main() {
           <div className="overlay"></div>
           <div className="background"></div>
           <div className="content">
-            <NavBar />
+            <NavBar img="/src/assets/Logo.svg" colorText="white"/>
             <HeroSection/>
             <FactsSection/>
             <ProjectsSection/>

@@ -102,10 +102,16 @@
   }
 }
 
+.lang-wrapper {
+  position: absolute;
+  top: 9%;
+  left: 2%;
+}
+
 .language-menu {
   position: absolute;
-  top: 200%;
-  left: 50%;
+  top: 100%;
+  left: 20%;
   transform: translateX(-50%);
 
   display: inline-flex;
@@ -128,4 +134,112 @@
 }
 .selected {
   font-weight: 600;
+}
+
+.dot-grid {
+  width: 30px;
+  height: 30px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  cursor: pointer;
+  z-index: 1002;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.dot-grid.open .dot-1 {
+  transform: translate(5px, 5px) rotate(45deg);
+  opacity: 1;
+}
+.dot-grid.open .dot-3 {
+  transform: translate(5px, -5px) rotate(-45deg);
+  opacity: 1;
+}
+.dot-grid.open .dot-5 {
+  transform: translate(-5px, 5px) rotate(-45deg);
+  opacity: 1;
+}
+.dot-grid.open .dot-7 {
+  transform: translate(-5px, -5px) rotate(45deg);
+  opacity: 1;
+}
+
+.display-none {
+  display: none;
+}
+
+.nav-bar__logo_mobile {
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  max-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .dot-grid {
+    display: grid;
+  }
+  .nav-bar__right-side {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background: #1a1a1a;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    display: none;
+    border-radius: 10px;
+  }
+
+  .nav-bar__right-side.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-bar__pages-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav-bar__page {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar__right-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(1, 19, 41, 1);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-bar__right-side.active {
+    display: flex;
+  }
+
+  .nav-bar__pages-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .language-menu {
+    position: absolute;
+    transform: none;
+    margin-top: 10px;
+  }
 }

@@ -1,3 +1,4 @@
+import useCheckWidth from '../../../../hooks/useCheckWidth';
 import './ProjectsSection.css'
 import img1 from "/src/assets/images/grid-1.jpg";
 import img3 from "/src/assets/images/grid-2.jpg"
@@ -15,6 +16,8 @@ const cardArr = [
         rcComplex: 'ЖК Terra',
         gridColumn: '1 / 2',
         gridRow: '1 / 7',
+        gridColumnMobile: '1 / 2',
+        gridRowMobile: '1 / 3'
     },
     {
         img: img2,
@@ -22,6 +25,8 @@ const cardArr = [
         rcComplex: 'ЖК Terra',
         gridColumn: '1 / 2',
         gridRow: '7 / 13',
+        gridColumnMobile: '2 / 3',
+        gridRowMobile: '1 / 3'
     },
     {
         img: img3,
@@ -29,6 +34,8 @@ const cardArr = [
         rcComplex: 'ЖК Terra',
         gridColumn: '2 / 4',
         gridRow: '1 / 5',
+        gridColumnMobile: '1 / 3',
+        gridRowMobile: '3 / 4'
     },
     {
         img: img4,
@@ -36,6 +43,8 @@ const cardArr = [
         rcComplex: 'ЖК Terra',
         gridColumn: '2 / 4',
         gridRow: '5 / 9',
+        gridColumnMobile: '1 / 2',
+        gridRowMobile: '4 / 6'
     },
     {
         img: img5,
@@ -43,6 +52,8 @@ const cardArr = [
         rcComplex: 'ЖК Terra',
         gridColumn: '2 / 4',
         gridRow: '9 / 13',
+        gridColumnMobile: '2 / 3',
+        gridRowMobile: '4 / 6'
     },
     {
         img: img6,
@@ -50,6 +61,8 @@ const cardArr = [
         rcComplex: 'ЖК Terra',
         gridColumn: '4 / 5',
         gridRow: '1 / 7',
+        gridColumnMobile: '1 / 3',
+        gridRowMobile: '6 / 7'
     },
     {
         img: img7,
@@ -57,50 +70,66 @@ const cardArr = [
         rcComplex: 'ЖК Terra',
         gridColumn: '4 / 5',
         gridRow: '7 / 13',
+        gridColumnMobile: '1 / 3',
+        gridRowMobile: '7 / 8'
     }
 ]
 
 export default function ProjectsSection() {
+    const isTablet = useCheckWidth(750)
+
     return (
-        // <div className="projects-container">
-        //   <div className="grid-gallery">
-        //     {cardArr.map((value, index) => (
-
-        //     <div key={index} className={`grid-item ${value.classname}`} >
-        //         <img src={value.img} alt="" />
-        //         <div className="overlay-text">
-        //             <div className="overlay-text_city">
-        //                 {value.city}
-        //             </div>
-        //             <div className="overlay-text_name">
-        //                 {value.rcComplex}
-        //             </div>
-        //         </div>
-        //     </div>
-        //     ))}
-        //   </div>
-        // </div>
-
-        <div className="projects-grid">
+        <>
+        {isTablet ? (
+            <div className="projects-grid">
             {cardArr.map((value, index) => (
-            <div
-            key={index}
-            className="project-card"
-            style={{
-                gridColumn: value.gridColumn,
-                gridRow: value.gridRow
-            }}
-            >
-            <img src={value.img} alt="" />
-                
-            <div className="project-overlay"><div className="overlay-text_city">
-                        {value.city}
-                     </div>
-                     <div className="overlay-text_name">
-                        {value.rcComplex}
-                     </div></div>
+                <div
+                key={index}
+                className="project-card"
+                style={{
+                    gridColumn: value.gridColumn,
+                    gridRow: value.gridRow
+                }}
+                >
+                    <img src={value.img} alt="" />
+            
+                    <div className="project-overlay">
+                        <div className="overlay-text_city">
+                            {value.city}
+                        </div>
+                        <div className="overlay-text_name">
+                           {value.rcComplex}
+                        </div>
+                    </div>
+                </div>
+                ))}
             </div>
-        ))}
-        </div>
+        ) : (
+            <div className="projects-grid_mobile">
+            {cardArr.slice(0, 6).map((value, index) => (
+                <div
+                key={index}
+                className="project-card"
+                style={{
+                    gridColumn: value.gridColumnMobile,
+                    gridRow: value.gridRowMobile
+                }}
+                >
+                    <img src={value.img} alt="" />
+            
+                    <div className="project-overlay">
+                        <div className="overlay-text_city">
+                            {value.city}
+                        </div>
+                        <div className="overlay-text_name">
+                           {value.rcComplex}
+                        </div>
+                    </div>
+                </div>
+                ))}
+            </div>
+        )}
+            
+        </>
     )
 }

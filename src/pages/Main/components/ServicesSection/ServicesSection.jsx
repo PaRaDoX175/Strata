@@ -5,7 +5,7 @@ import img3 from "/src/assets/icons/bim1.avif"
 import img4 from "/src/assets/icons/drone1.avif"
 import img5 from "/src/assets/icons/valueblack.avif"
 import img6 from "/src/assets/icons/due1.avif"
-
+import useCheckWidth from '../../../../hooks/useCheckWidth';
 
 const cardArr = [ 
     {
@@ -35,21 +35,41 @@ const cardArr = [
 ]
 
 export default function ServicesSection() {
+    const isTablet = useCheckWidth(700)
+
     return (
-        <div className="services__container">
-            <div className="services__container_decor"></div>
-            <div className="services__line">
-                <div className="services-cards">
-                {cardArr.map((value, index) => (
-                    <div key={index} className="services-card__container">
-                    <div className="services-card__content">
-                        <span className="services-card__text">{value.serviceName}</span>
-                        <img className="services-card__img" src={value.img} alt="" />
-                    </div>
-                    </div>
+        <>
+        {isTablet ? (
+            <div className="services__container">
+                <div className="services__container_decor"></div>
+                <div className="services__line">
+                    <div className="services-cards">
+                    {cardArr.map((value, index) => (
+                        <div key={index} className="services-card__container">
+                            <div className="services-card__content">
+                                <span className="services-card__text">{value.serviceName}</span>
+                                <img className="services-card__img" src={value.img} alt="" />
+                            </div>
+                        </div>
                 ))}
                 </div>
             </div>
-        </div>        
+        </div>  
+        ) : (
+            <div className="services__container_mobile">
+                <div className="services__container_decor"></div>
+                <div className="services__title_mobile">Услуги</div>
+                <div className="services__serv_mobile">
+                {cardArr.map((value, index) => (
+                        <div key={index}>
+                                <span className="services-card__text">{value.serviceName}</span>
+                        </div>
+                ))}    
+                </div>
+        </div>  
+        )}
+            
+        </>
+              
     )
 }

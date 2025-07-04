@@ -13,7 +13,6 @@
 
 .blue-layer {
   width: 100%;
-
   background-color: rgba(10, 64, 100, 0.1);
 }
 
@@ -21,7 +20,7 @@
   padding-top: 50px;
   text-align: center;
   color: #001732;
-  font-size: 40px;
+  font-size: clamp(18px, 4vw, 40px);
   margin: 0;
   z-index: 5;
 }
@@ -32,7 +31,13 @@
   max-width: 1400px;
   color: #0a4064;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: clamp(13px, 2.5vw, 30px);
+  padding-bottom: 50px;
+}
+
+.review-position {
+  font-size: clamp(13px, 2.5vw, 30px);
+  margin: 0;
 }
 
 .swiper-slide {
@@ -72,4 +77,44 @@
 
 .right-button {
   right: 7%;
+}
+
+@media (max-width: 1050px) {
+  .left-button,
+  .right-button {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .reviews-container {
+    height: 450px;
+  }
+  .review-position {
+    padding-bottom: 30px;
+  }
+  .reviews__title {
+    padding-top: 30px;
+  }
+  .reviews__reviews-carousel {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .reviews-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 380px) {
+  .reviews-container {
+    height: 450px;
+  }
+}
+
+@media (max-width: 320px) {
+  .reviews-container {
+    height: 500px;
+  }
 }

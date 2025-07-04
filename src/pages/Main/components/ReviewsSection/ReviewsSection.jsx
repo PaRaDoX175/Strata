@@ -52,8 +52,8 @@ export default function ReviewsSection() {
                         <SwiperSlide key={index}>
                             <div>
                                 <p>{value.review}</p>
-                                <strong style={{ fontSize: 25 }}>{value.name}</strong>
-                                <p style={{ fontSize: 20, marginTop: 0 }}>{value.position}</p>
+                                <strong className='review-position'>{value.name}</strong>
+                                <p className='review-position'>{value.position}</p>
                             </div>
                         </SwiperSlide>
                         ))}
@@ -65,7 +65,7 @@ export default function ReviewsSection() {
                         </div>
                     </Swiper>
                 </div>
-            </div>
+                </div>
         </div>
     )
 }
