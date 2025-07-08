@@ -1,0 +1,43 @@
+{
+    "projectsFilter": {
+        "filter": "Filter",
+        "category": "Category",
+        "categories": {
+            "all": "All",
+            "residential": "Residential complexes",
+            "commerce": "Commerce",
+            "rebuild": "Rebuild",
+            "tourism": "Tourism",
+            "masterPlan": "Master plan",
+            "education": "Education",
+            "other": "Others"
+        }
+    },
+    "pageTitle": "Projects",
+    "cardTitles": {
+        "projects": "Projects",
+        "place": "Place",
+        "customer": "Customer",
+        "square": "Square",
+        "period": "Implementation period",
+        "features": "Features"
+    },
+    "projects": {
+        "project1": {
+            "projectName": "Reconstruction of the Narxoz University campus",
+            "place": "Almaty, Kazakhstan",
+            "customer": "NARXOZ UNIVERSITY",
+            "square": "30,000 sq.m.",
+            "period": "2021",
+            "features": "Seismic resistance"
+        },
+        "project2": {
+            "projectName": "Reconstruction of the Narxoz University campus",
+            "place": "Almaty, Kazakhstan",
+            "customer": "NARXOZ UNIVERSITY",
+            "square": "30,000 sq.m.",
+            "period": "2021",
+            "features": "Seismic resistance"
+        }
+    }
+}

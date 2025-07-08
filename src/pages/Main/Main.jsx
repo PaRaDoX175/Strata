@@ -7,9 +7,11 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 import ReviewsSection from './components/ReviewsSection/ReviewsSection'
 import ServicesSection from './components/ServicesSection/ServicesSection'
 import '/src/i18n'
+import ScrollToTop from '/src/ScrollToTop.jsx'
 
 export default function Main() {
     return <>
+          <ScrollToTop/>
           <div className="overlay"></div>
           <div className="background"></div>
           <div className="content">

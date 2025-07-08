@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules';
 import { useRef } from 'react';
-import './ReviewsSection.css'
+import s from './ReviewsSection.module.css'
 import 'swiper/css'
 import 'swiper/css/navigation';
 
@@ -32,11 +32,11 @@ export default function ReviewsSection() {
     const rightButton = useRef(null)
     const leftButton = useRef(null)
     return (
-        <div className="reviews-container">
-            <div className="blue-layer">
-                <h2 className="reviews__title">Что говорят наши клиенты</h2>
-                <div className="reviews__reviews-carousel">
-                    <Swiper modules={[Navigation]} 
+        <div className={s['reviews-container']}>
+            <div className={s['blue-layer']}>
+                <h2 className={s['reviews__title']}>Что говорят наши клиенты</h2>
+                <div className={s['reviews__reviews-carousel']}>
+                    <Swiper className={s['reviews-swiper']} modules={[Navigation]} 
                     spaceBetween={50} 
                     centeredSlides={true}
                     slidesPerView='auto'
@@ -52,15 +52,15 @@ export default function ReviewsSection() {
                         <SwiperSlide key={index}>
                             <div>
                                 <p>{value.review}</p>
-                                <strong className='review-position'>{value.name}</strong>
-                                <p className='review-position'>{value.position}</p>
+                                <strong className={s['review-position']}>{value.name}</strong>
+                                <p className={s['review-position']}>{value.position}</p>
                             </div>
                         </SwiperSlide>
                         ))}
-                        <div ref={leftButton} className='left-button'>
+                        <div ref={leftButton} className={s['left-button']}>
                             <img src="/src/assets/icons/left_arrow.svg" alt="" />
                         </div>
-                        <div ref={rightButton} className='right-button'>
+                        <div ref={rightButton} className={s['right-button']}>
                             <img src="/src/assets/icons/right_arrow.svg" alt="" />
                         </div>
                     </Swiper>

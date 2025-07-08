@@ -28,6 +28,12 @@
   gap: 40px;
 }
 
+.nav-bar__right-side_mobile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-bar__pages-container {
   display: flex;
   align-items: center;
@@ -111,7 +117,7 @@
 .language-menu {
   position: absolute;
   top: 100%;
-  left: 20%;
+  left: 50%;
   transform: translateX(-50%);
 
   display: inline-flex;
@@ -181,6 +187,12 @@
   max-height: 50px;
 }
 
+.activeLink {
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
 @media (max-width: 768px) {
   .dot-grid {
     display: grid;
@@ -239,6 +251,8 @@
 
   .language-menu {
     position: absolute;
+    top: 100%;
+    left: 20%;
     transform: none;
     margin-top: 10px;
   }

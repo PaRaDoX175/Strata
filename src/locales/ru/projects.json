@@ -1,0 +1,43 @@
+{
+    "projectsFilter": {
+        "filter": "Фильтр",
+        "category": "Категория",
+        "categories": {
+            "all": "Все",
+            "residential": "Жилые комплексы",
+            "commerce": "Коммерция",
+            "rebuild": "Реконструкция",
+            "tourism": "Туризм",
+            "masterPlan": "Мастер план",
+            "education": "Образование",
+            "other": "Другие"
+        }
+    },
+    "pageTitle": "Проекты",
+    "cardTitles": {
+        "projects": "Проекты",
+        "place": "Расположение",
+        "customer": "Заказчик",
+        "square": "Площадь",
+        "period": "Период реализации",
+        "features": "Особенности"
+    },
+    "projects": {
+        "project1": {
+            "projectName": "Реконструкция кампуса Narxoz University",
+            "place": "г. Алматы, Казахстан",
+            "customer": "NARXOZ UNIVERSITY",
+            "square": "30,000 кв.м.",
+            "period": "2021",
+            "features": "Сейсмоустойчивость"
+        },
+        "project2": {
+            "projectName": "Реконструкция кампуса Narxoz University",
+            "place": "г. Алматы, Казахстан",
+            "customer": "NARXOZ UNIVERSITY",
+            "square": "30,000 кв.м.",
+            "period": "2021",
+            "features": "Сейсмоустойчивость"
+        }
+    }
+}
