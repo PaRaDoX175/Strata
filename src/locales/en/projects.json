@@ -32,11 +32,75 @@
             "features": "Seismic resistance"
         },
         "project2": {
-            "projectName": "Reconstruction of the Narxoz University campus",
+            "projectName": "Mega SILK WAY",
+            "place": "Astana, Kazakhstan",
+            "customer": "Astana Group",
+            "square": "140,400 sq.m.",
+            "period": "2013-2014",
+            "features": "Seismic resistance"
+        },
+        "project3": {
+            "projectName": "RC Braun",
             "place": "Almaty, Kazakhstan",
-            "customer": "NARXOZ UNIVERSITY",
-            "square": "30,000 sq.m.",
+            "customer": "Tau Development",
+            "square": "16,400 sq.m.",
+            "period": "2017-2019",
+            "features": "Seismic resistance"
+        },
+        "project4": {
+            "projectName": "RC Terra",
+            "place": "Almaty, Kazakhstan",
+            "customer": "Confidential information",
+            "square": "109,467 sq.m.",
+            "period": "2017-2018",
+            "features": "Seismic resistance"
+        },
+        "project5": {
+            "projectName": "Class A office campus",
+            "place": "Almaty, Kazakhstan",
+            "customer": "Consortium of international companies in Kazakhstan",
+            "square": "91,000 sq.m.",
+            "period": "2019-2020",
+            "features": "Seismic resistance"
+        },
+        "project6": {
+            "projectName": "Warehouse complex",
+            "place": "Almaty, Kazakhstan",
+            "customer": "TOO ALG-Company",
+            "square": "12,000 sq.m.",
+            "period": "2018-2019",
+            "features": "Seismic resistance"
+        },
+        "project7": {
+            "projectName": "Visit center Butakovka",
+            "place": "Almaty, Kazakhstan",
+            "customer": "Private person",
+            "square": "35,000 sq.m.",
             "period": "2021",
+            "features": "Seismic resistance"
+        },
+        "project8": {
+            "projectName": "Reconstruction of the Ramstore shopping center",
+            "place": "Almaty, Kazakhstan",
+            "customer": "Migros Ticaret",
+            "square": "27,900 sq.m.",
+            "period": "2016-2017",
+            "features": "Seismic resistance"
+        },
+        "project9": {
+            "projectName": "P-Project",
+            "place": "Astana, Kazakhstan",
+            "customer": "BI Group",
+            "square": "324,000 sq.m.",
+            "period": "2014-2016",
+            "features": "Seismic resistance"
+        },
+        "project10": {
+            "projectName": "City Plus",
+            "place": "Almaty, Kazakhstan",
+            "customer": "Magnum Cash & Carry",
+            "square": "8,000 sq.m.",
+            "period": "2021-2022",
             "features": "Seismic resistance"
         }
     }

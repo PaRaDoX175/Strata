@@ -6,36 +6,40 @@ import img4 from "/src/assets/icons/drone1.avif"
 import img5 from "/src/assets/icons/valueblack.avif"
 import img6 from "/src/assets/icons/due1.avif"
 import useCheckWidth from '../../../../hooks/useCheckWidth';
+import { useTranslation } from 'react-i18next';
 
-const cardArr = [ 
-    {
-        img: img1,
-        serviceName: "Концептуальное проектирование"
-    },
-    {
-        img: img2,
-        serviceName: "Эскизное и рабочее проектирование"
-    },
-    {
-        img: img3,
-        serviceName: "BIM проектирование"
-    },
-    {
-        img: img4,
-        serviceName: "Аэросъемка и цифровые модели"
-    },
-    {
-        img: img5,
-        serviceName: "Функционально-стоимостный анализ"
-    },
-    {
-        img: img6,
-        serviceName: "Комплексный анализ проекта"
-    }
-]
+
 
 export default function ServicesSection({ id }) {
     const isTablet = useCheckWidth(700)
+    const { t } = useTranslation('main')
+
+    const cardArr = [ 
+        {
+            img: img1,
+            serviceName: t('servicesSection.conceptualDesign')
+        },
+        {
+            img: img2,
+            serviceName: t('servicesSection.workingDesign')
+        },
+        {
+            img: img3,
+            serviceName: t('servicesSection.bimDesign')
+        },
+        {
+            img: img4,
+            serviceName: t('servicesSection.aerialPhoto')
+        },
+        {
+            img: img5,
+            serviceName: t('servicesSection.funcCostAnalysis')
+        },
+        {
+            img: img6,
+            serviceName: t('servicesSection.projectAnalysis')
+        }
+    ]
 
     return (
         <>
@@ -58,7 +62,7 @@ export default function ServicesSection({ id }) {
         ) : (
             <div className="services__container_mobile" id={id}>
                 <div className="services__container_decor"></div>
-                <div className="services__title_mobile">Услуги</div>
+                <div className="services__title_mobile">{t('servicesSection.services')}</div>
                 <div className="services__serv_mobile">
                 {cardArr.map((value, index) => (
                         <div key={index}>

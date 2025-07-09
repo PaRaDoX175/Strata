@@ -13,5 +13,50 @@
     "HeroSectionMobile": {
         "Text": "ALREADY TODAY",
         "MainText": "WE IMPLEMENT IDEAS INTO A SIGNIFICANT ASSET"
-    }
+    },
+    "factsSection": {
+        "left": "75% Loyal customers 120+ projects Total area 2 million m²",
+        "center": "One of the first companies in Kazakhstan to implement BIM, LEED and BREEAM technologies",
+        "right": "CHAPMAN TAILOR · JTI AECOM · CALLISONRTKL"
+    },
+    "servicesSection": {
+        "services": "Services",
+        "conceptualDesign": "Conceptual design",
+        "workingDesign": "Sketch and working design",
+        "bimDesign": "BIM design",
+        "aerialPhoto": "Aerial photography and digital models",
+        "funcCostAnalysis": "Functional cost analysis",
+        "projectAnalysis": "Comprehensive project analysis"
+    },
+    "reviewsSection": {
+        "title": "What our clients say",
+        "reviews": [
+            {
+                "id": 1,
+                "review": "NAO «Narxoz University» confirms that KZSTRATA LLP developed the draft and working documentation for the reconstruction of the university building (Almaty, Zhandosov St. 55) in the period from 24.07.2020 to 08.04.2021. The work was completed efficiently and on time, in compliance with Kazakhstani legislation and international standards. We note the high professionalism and recommend the company as a reliable designer.",
+                "name": "K.A.Amenova",
+                "position": "Vice-Rector for Administrative Work"
+            },
+            {
+                "id": 2,
+                "review": "NAO «Narxoz University» confirms that KZSTRATA LLP developed the draft and working documentation for the reconstruction of the university building (Almaty, Zhandosov St. 55) in the period from 24.07.2020 to 08.04.2021. The work was completed efficiently and on time, in compliance with Kazakhstani legislation and international standards. We note the high professionalism and recommend the company as a reliable designer.",
+                "name": "K.A.Amenova",
+                "position": "Vice-Rector for Administrative Work"
+            },
+            {
+                "id": 3,
+                "review": "NAO «Narxoz University» confirms that KZSTRATA LLP developed the draft and working documentation for the reconstruction of the university building (Almaty, Zhandosov St. 55) in the period from 24.07.2020 to 08.04.2021. The work was completed efficiently and on time, in compliance with Kazakhstani legislation and international standards. We note the high professionalism and recommend the company as a reliable designer.",
+                "name": "K.A.Amenova",
+                "position": "Vice-Rector for Administrative Work"
+            },
+            {
+                "id": 4,
+                "review": "NAO «Narxoz University» confirms that KZSTRATA LLP developed the draft and working documentation for the reconstruction of the university building (Almaty, Zhandosov St. 55) in the period from 24.07.2020 to 08.04.2021. The work was completed efficiently and on time, in compliance with Kazakhstani legislation and international standards. We note the high professionalism and recommend the company as a reliable designer.",
+                "name": "K.A.Amenova",
+                "position": "Vice-Rector for Administrative Work"
+            }
+        ]
+    },
+    "footer": "Almaty, 050060, st. Khusainova 281 BC «Granit»",
+    "rights": "© 2025 STRATA. ALL RIGHTS RESERVED."
 }

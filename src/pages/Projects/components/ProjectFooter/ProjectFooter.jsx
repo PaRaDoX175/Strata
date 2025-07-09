@@ -14,7 +14,9 @@ export default function ProjectFooter() {
                     <div className={s["footer__info"]}>
                         <div className={s["footer__info_text"]}>+7 (778) 106-22-00</div>
                         <div className={s["footer__info_text"]}>info@strata.kz</div>
-                        <div className={s["footer__info_text"]}>г. Алматы, 050060, ул. Хусаинова 281 БЦ «Гранит»</div>
+                        <a href="https://2gis.kz/almaty/firm/9429940000794613?m=76.891932%2C43.198411%2F17.85" target="_blank" rel="noopener noreferrer">
+                            <div className={s["footer__info_text"]}>г. Алматы, 050060, ул. Хусаинова 281 БЦ «Гранит»</div>
+                        </a>
                     </div>
                 </div>
                 <div className={s["footer__rights"]}>
@@ -40,7 +42,9 @@ export default function ProjectFooter() {
                             <img src="/src/assets/icons/Facebook.svg" alt="" className={s["footer__icon"]} />
                         </div>
                         <div className={s["icon_text"]}>
-                            <div className={s["footer__info_text"]}>г. Алматы, 050060, ул. Хусаинова 281 БЦ «Гранит»</div>
+                            <a href="https://2gis.kz/almaty/firm/9429940000794613?m=76.891932%2C43.198411%2F17.85" target="_blank" rel="noopener noreferrer">
+                                <div className={s["footer__info_text"]}>г. Алматы, 050060, ул. Хусаинова 281 БЦ «Гранит»</div>
+                            </a>
                             <img src="/src/assets/icons/Whatsapp.svg" alt="" className={s["footer__icon"]} />
                         </div>
                         

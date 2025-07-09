@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import styles from './Contacts.module.css'
 import NavBar from '/src/global-components/NavBar/NavBar'
 
 export default function Contacts() {
+    const { t } = useTranslation('contacts')
+
     return (
         <div className={styles['contacts-container']}>
             <div className={styles.overlay}></div>
@@ -10,7 +13,9 @@ export default function Contacts() {
             <NavBar img="/src/assets/Logo_dark.svg" colorText="#011329"/>
             <div className={styles['contacts-wrap']}>
                 <div className={styles['text-container']}>
-                <div className={styles['text']}>г. Алматы, ул. Хусаинова, 281, БЦ “Гранит”</div>
+                <a href="https://2gis.kz/almaty/firm/9429940000794613?m=76.891932%2C43.198411%2F17.85" target="_blank" rel="noopener noreferrer">
+                    <div className={styles['text']}>{t('address')}</div>
+                </a>
                 <div className={styles['text']}>+7 (778) 106-22-00</div>
                 <div className={styles['text']}>info@strata.kz</div>
                 </div>

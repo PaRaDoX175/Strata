@@ -5,9 +5,6 @@ import NavBar from '../../global-components/NavBar/NavBar';
 import AboutUsImg from "/src/assets/2.jpg"
 import AboutUsImg2 from "/src/assets/About_us_2.jpg"
 import AboutUsImg3 from "/src/assets/Partners.svg"
-import Start from "/src/assets/Start.svg"
-import Middle from "/src/assets/Middle.svg"
-import End from "/src/assets/End.svg"
 import Logo from "/src/assets/Strata_mini_logo.svg"
 
 import Svg1 from "/src/assets/left/1.svg"
@@ -28,6 +25,7 @@ import Svg15 from "/src/assets/right/5.svg"
 import Svg16 from "/src/assets/right/6.svg"
 import { useTranslation } from 'react-i18next';
 import ScrollToTop from '/src/ScrollToTop.jsx'
+import Footer from '../../global-components/Footer/Footer';
 
 export default function AboutUs() {
   const { t } = useTranslation('aboutUs')
@@ -51,11 +49,8 @@ export default function AboutUs() {
 },]
 const ABOUT_US_2 = [{
     id: 1, text: <>
-        <p><span className={s['about-us__text--bold']}> Философия STRATA</span> — не просто про строительство.
-            Ценя <span className={s['about-us__text--underline']}>технологии, устойчивость, ответственность </span> и <span
-                className={s['about-us__text--underline']}>клиентоориентированность</span>, мы создаём по всему
-            миру эстетичные, экономичные и экологичные
-            пространства. Так мы строим надёжное сегодня для лучшего завтра.
+        <p><span className={s['about-us__text--bold']}> {t('philosophy.bold')} </span> {t('philosophy.simpleText1')}
+         <span className={s['about-us__text--underline']}>{t('philosophy.underline')}</span>{t('philosophy.simpleText2')}
         </p>
     </>
 }]
@@ -156,231 +151,8 @@ const SVG_SLIDER_RIGHT = [
       </div>
     </div>
   </div>
-
-  <div className={s['wrapper']}>
-    <div className={`${s['container']} ${s['position-center']}`}>
-      <div className={s['timeline-wrapper']}>
-        <div className={`${s['timeline-container']} ${s['direction-row']}`}>
-          <div className={s['timeline-img']}>
-            <img src={Start} />
-          </div>
-          <div className={s['timeline-img']}>
-            <img src={Middle} />
-          </div>
-          <div className={s['timeline-img']}>
-            <img src={End} />
-          </div>
-        </div>
-        <div className={`${s['direction-row']} ${s['timeline-years']}`}>
-          <h3>2008</h3>
-          <h3>2010</h3>
-          <h3>2012</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <Footer />
 </div>
       </>
     )
 }
-
-
-
-// import React from 'react';
-
-
-
-// import AboutUsImg from "/src/assets/2.jpg"
-// import AboutUsImg2 from "/src/assets/About_us_2.jpg"
-// import AboutUsImg3 from "/src/assets/Partners.svg"
-// import Start from "/src/assets/Start.svg"
-// import Middle from "/src/assets/Middle.svg"
-// import End from "/src/assets/End.svg"
-// import Logo from "/src/assets/Strata_mini_logo.svg"
-
-// import Svg1 from "/src/assets/left/1.svg"
-// import Svg2 from "/src/assets/left/2.svg"
-// import Svg3 from "/src/assets/left/3.svg"
-// import Svg4 from "/src/assets/left/4.svg"
-// import Svg5 from "/src/assets/left/5.svg"
-// import Svg6 from "/src/assets/left/6.svg"
-// import Svg7 from "/src/assets/left/7.svg"
-// import Svg8 from "/src/assets/left/8.svg"
-
-
-// import Svg11 from "/src/assets/right/1.svg"
-// import Svg12 from "/src/assets/right/2.svg"
-// import Svg13 from "/src/assets/right/3.svg"
-// import Svg14 from "/src/assets/right/4.svg"
-// import Svg15 from "/src/assets/right/5.svg"
-// import Svg16 from "/src/assets/right/6.svg"
-// import "./AboutUs.css"
-
-
-// const ABOUT_US = [{
-//     id: 1, text: (<>
-//         <span className="about-us__text--bold">STRATA</span> — архитектурное бюро полного цикла, лидирующее в
-//         инновациях строительной индустрии более 20 лет.
-//     </>),
-// }, {
-//     id: 2, text: <>
-//         <span className="about-us__text--extra-bold">· </span>Мы спроектировали свыше 20 млн м², используя BIM
-//         и сертификации LEED, BREEAM.
-//     </>
-// }, {
-//     id: 3, text: <>
-//         <span className="about-us__text--extra-bold">· </span>За экологичный и устойчивый дизайн получили
-//         международные награды.
-//     </>
-
-// }, {
-//     id: 4,
-//     text: "Архитектура формирует будущее и улучшает мир. Воплотим ваше видение и создадим позитивное воздействие на окружающую среду."
-// },]
-// const ABOUT_US_2 = [{
-//     id: 1, text: <>
-//         <p><span className="about-us__text--bold"> Философия STRATA</span> — не просто про строительство.
-//             Ценя <span className="about-us__text--underline">технологии, устойчивость, ответственность </span> и <span
-//                 className="about-us__text--underline">клиентоориентированность</span>, мы создаём по всему
-//             миру эстетичные, экономичные и экологичные
-//             пространства. Так мы строим надёжное сегодня для лучшего завтра.
-//         </p>
-//     </>
-// }]
-
-// const TIMELINE = [
-//     {year: 2004, info: "Основание компании"},
-//     {year: 2006, info: "Первый крупный проект"},
-//     {year: 2009, info: "Выход на международный рынок"},
-// ];
-
-// const SVG_SLIDER_LEFT = [
-//     {id: 1, svg: Svg1},
-//     {id: 2, svg: Svg2},
-//     {id: 3, svg: Svg3},
-//     {id: 4, svg: Svg4},
-//     {id: 5, svg: Svg5},
-//     {id: 6, svg: Svg6},
-//     {id: 7, svg: Svg7},
-//     {id: 8, svg: Svg8},
-//     {id: 9, svg: Svg1},
-//     {id: 10, svg: Svg2},
-//     {id: 11, svg: Svg3},
-//     {id: 12, svg: Svg4},
-//     {id: 13, svg: Svg5},
-//     {id: 14, svg: Svg6},
-//     {id: 15, svg: Svg7},
-//     {id: 16, svg: Svg8},
-// ]
-
-// const SVG_SLIDER_RIGHT = [
-//     {id: 1, svg: Svg11},
-//     {id: 2, svg: Svg12},
-//     {id: 3, svg: Svg13},
-//     {id: 4, svg: Svg14},
-//     {id: 5, svg: Svg15},
-//     {id: 6, svg: Svg16},
-//     {id: 7, svg: Svg11},
-//     {id: 8, svg: Svg12},
-//     {id: 9, svg: Svg13},
-//     {id: 10, svg: Svg14},
-//     {id: 11, svg: Svg15},
-//     {id: 12, svg: Svg16},
-// ]
-
-
-// const AboutUs = () => {
-//     return (
-//         <div className="about-us-wrapper">
-//             {/*<Header/>*/}
-
-//             <div className={"wrapper"}>
-//                 <div className="container  main-section">
-//                     <div className="about-us__content">
-//                         {ABOUT_US.map(({id, text}) => {
-//                             return <p className="about-us__text" key={id}>{text}</p>
-//                         })}
-//                     </div>
-//                     <div className="about-us__img">
-//                         <img src={AboutUsImg}/>
-//                     </div>
-//                 </div>
-
-//             </div>
-//             <div className={"wrapper"}>
-//                 <div className="container direction-row philosophy-section background-color-blue ">
-//                     <div className="about-us__img--philosophy">
-//                         <img className="about-us__img--polygon" src={AboutUsImg2}/>
-//                         <img className="about-us__img--logo-position" src={Logo}/>
-//                     </div>
-//                     <div className="about-us__inner ">
-//                         {ABOUT_US_2.map(({text}) => {
-//                             return <>{text}</>
-//                         })}
-//                     </div>
-
-//                 </div>
-//             </div>
-
-
-//             <div className="container desktop-only ">
-//                 <img src={AboutUsImg3}/>
-//             </div>
-
-
-//             <div className="container--mobile mobile-only">
-//                 <div className="slider">
-//                     <div className="slide-container__left">
-//                         {SVG_SLIDER_LEFT.map(({id, svg}) => {
-//                             return <div className="slide-left">
-//                                 <img className=" left" src={svg} key={id}/>
-//                             </div>
-//                         })}
-//                     </div>
-//                 </div>
-//                 <div className="slider">
-//                     <div className="slide-container__right">
-//                         {SVG_SLIDER_RIGHT.map(({id, svg}) => {
-//                             return <div className="slide-right">
-//                                 <img className="right" src={svg} key={id}/>
-//                             </div>
-//                         })}
-//                     </div>
-//                 </div>
-
-
-
-
-//             </div>
-
-//             <div className="wrapper">
-//                 <div className="container position-center">
-//                     <div className="timeline-wrapper">
-//                         <div className="timeline-container direction-row">
-//                             <div className="timeline-img">
-//                                 <img src={Start}/>
-//                             </div>
-
-//                             <div className="timeline-img">
-//                                 <img src={Middle}/>
-//                             </div>
-//                             <div className="timeline-img">
-//                                 <img src={End}/>
-//                             </div>
-//                         </div>
-//                         <div className="direction-row timeline-years">
-//                             <h3>2008</h3>
-//                             <h3>2010</h3>
-//                             <h3>2012</h3>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-
-//         </div>
-//     )
-//         ;
-// };
-
-// export default AboutUs;

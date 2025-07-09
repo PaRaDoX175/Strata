@@ -27,7 +27,7 @@ i18next.use(initReactI18next).init({
   },
   lng: "ru",
   fallbackLng: "ru",
-  ns: ["main", "projects", "aboutUs"],
+  ns: ["main", "projects", "aboutUs", "contacts"],
   defaultNS: "main",
   interpolation: {
     escapeValue: false,

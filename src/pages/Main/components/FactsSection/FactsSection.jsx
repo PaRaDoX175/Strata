@@ -4,27 +4,29 @@ import { FreeMode } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import './FactsSection.css'
-
-const mobileCards = [
-  {
-    img: '/src/assets/images/building_windows.jpg',
-    icon: '/src/assets/icons/CalendarIcon.svg',
-    text: '75% Лояльных клиентов 120+ проектов Общей площадью 2 млн м²'
-  },
-  {
-    img: '/src/assets/images/mega.jpg',
-    icon: '/src/assets/icons/PeoplesIcon.svg',
-    text: 'Одна из первых компаний в Казахстане, внедрившая технологии BIM, LEED и BREEAM'
-  },
-  {
-    img: '/src/assets/images/hero_section.jpg',
-    icon: '/src/assets/icons/HandshakeIcon.svg',
-    text: 'CHAPMAN TAILOR · JTI AECOM · CALLISONRTKL'
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 export default function FactsSection() {
   const isTablet = useCheckWidth(1024)
+  const { t } = useTranslation('main')
+
+  const mobileCards = [
+    {
+      img: '/src/assets/images/building_windows.jpg',
+      icon: '/src/assets/icons/CalendarIcon.svg',
+      text: t('factsSection.left')
+    },
+    {
+      img: '/src/assets/images/mega.jpg',
+      icon: '/src/assets/icons/PeoplesIcon.svg',
+      text: t('factsSection.center')
+    },
+    {
+      img: '/src/assets/images/hero_section.jpg',
+      icon: '/src/assets/icons/HandshakeIcon.svg',
+      text: t('factsSection.right')
+    },
+  ]
 
     return (
       <>
@@ -43,7 +45,7 @@ export default function FactsSection() {
                 className="facts-section__icon"
               />
               <p className="facts-section__text">
-                75% Лояльных клиентов 120+ проектов Общей площадью 2 млн м²
+                {t('factsSection.left')}
               </p>
             </div>
           </div>
@@ -56,8 +58,7 @@ export default function FactsSection() {
                 className="facts-section__icon"
               />
               <p className="facts-section__text">
-                Одна из первых компаний в Казахстане, внедрившая технологии BIM,
-                LEED и BREEAM
+                {t('factsSection.center')}
               </p>
             </div>
           </div>
@@ -74,7 +75,7 @@ export default function FactsSection() {
                 className="facts-section__icon"
               />
               <p className="facts-section__text">
-                CHAPMAN TAILOR · JTI AECOM · CALLISONRTKL
+                {t('factsSection.right')}
               </p>
             </div>
           </div>
@@ -109,46 +110,6 @@ export default function FactsSection() {
                         
                         </SwiperSlide>
                       ))}
-                        {/* <SwiperSlide style={{ width: 600 }}>
-                          <div className="facts-card__container_mobile">
-                            <img
-                              src="/src/assets/images/mega.jpg"
-                              alt="Icon"
-                              className="facts-section__image_mobile"
-                            />
-                            <div className="facts-section__text-icon_mobile">
-                              <img
-                                src="/src/assets/icons/PeoplesIcon.svg"
-                                alt="Icon"
-                                className="facts-section__icon_mobile"
-                              />
-                              <p className="facts-section__text_mobile">
-                              Одна из первых компаний в Казахстане, внедрившая технологии BIM,
-                              LEED и BREEAM
-                              </p>
-                            </div>
-                          </div>
-                        
-                        </SwiperSlide>
-                        <SwiperSlide style={{ width: 600 }}>
-                        <div className="facts-card__container_mobile">
-                          <img
-                            src="/src/assets/images/hero_section.jpg"
-                            alt="Icon"
-                            className="facts-section__image_mobile"
-                          />
-                          <div className="facts-section__text-icon_mobile">
-                              <img
-                                src="/src/assets/icons/HandshakeIcon.svg"
-                                alt="Icon"
-                                className="facts-section__icon_mobile"
-                              />
-                              <p className="facts-section__text_mobile">
-                              CHAPMAN TAILOR · JTI AECOM · CALLISONRTKL
-                              </p>
-                            </div>
-                          </div>
-                        </SwiperSlide> */}
                     </Swiper>
                 </div>
       )}

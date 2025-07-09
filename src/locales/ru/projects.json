@@ -32,11 +32,75 @@
             "features": "Сейсмоустойчивость"
         },
         "project2": {
-            "projectName": "Реконструкция кампуса Narxoz University",
+            "projectName": "Mega SILK WAY",
+            "place": "г. Астана, Казахстан",
+            "customer": "Astana Group",
+            "square": "140,400 кв.м.",
+            "period": "2013-2014",
+            "features": "Сейсмоустойчивость"
+        },
+        "project3": {
+            "projectName": "ЖК Braun",
             "place": "г. Алматы, Казахстан",
-            "customer": "NARXOZ UNIVERSITY",
-            "square": "30,000 кв.м.",
+            "customer": "Tau Development",
+            "square": "16,400 кв.м.",
+            "period": "2017-2019",
+            "features": "Сейсмоустойчивость"
+        },
+        "project4": {
+            "projectName": "ЖК Terra",
+            "place": "г. Алматы, Казахстан",
+            "customer": "Конфиденциальная информация",
+            "square": "109,467 кв.м.",
+            "period": "2017-2018",
+            "features": "Сейсмоустойчивость"
+        },
+        "project5": {
+            "projectName": "Офисный кампус класса A",
+            "place": "г. Алматы, Казахстан",
+            "customer": "Консорциум международных компаний в Казахстане",
+            "square": "91,000 кв.м.",
+            "period": "2019-2020",
+            "features": "Сейсмоустойчивость"
+        },
+        "project6": {
+            "projectName": "Складской комплекс",
+            "place": "г. Алматы, Казахстан",
+            "customer": "TOO ALG-Company",
+            "square": "12,000 кв.м.",
+            "period": "2018-2019",
+            "features": "Сейсмоустойчивость"
+        },
+        "project7": {
+            "projectName": "Визит центр Бутаковка",
+            "place": "г. Алматы, Казахстан",
+            "customer": "Частное лицо",
+            "square": "35,000 кв.м.",
             "period": "2021",
+            "features": "Сейсмоустойчивость"
+        },
+        "project8": {
+            "projectName": "Реконструкция ТЦ Рамстор",
+            "place": "г. Алматы, Казахстан",
+            "customer": "Migros Ticaret",
+            "square": "27,900 кв.м.",
+            "period": "2016-2017",
+            "features": "Сейсмоустойчивость"
+        },
+        "project9": {
+            "projectName": "P-Project",
+            "place": "г. Астана, Казахстан",
+            "customer": "BI Group",
+            "square": "324,000 кв.м.",
+            "period": "2014-2016",
+            "features": "Сейсмоустойчивость"
+        },
+        "project10": {
+            "projectName": "City Plus",
+            "place": "г. Алматы, Казахстан",
+            "customer": "Magnum Cash & Carry",
+            "square": "8,000 кв.м.",
+            "period": "2021-2022",
             "features": "Сейсмоустойчивость"
         }
     }
