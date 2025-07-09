@@ -1,3 +1,17 @@
+.wrap {
+  margin-top: 50px;
+}
+
 .project-wrap {
   margin-bottom: 100px;
+}
+
+.project-wrap:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 500px) {
+  .project-wrap {
+    margin-bottom: 50px;
+  }
 }

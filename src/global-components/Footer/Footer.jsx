@@ -20,7 +20,9 @@ export default function Footer() {
                 <div className="footer__rights">
                         <div className='rights'>© 2025 STRATA. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</div>
                         <div className="footer__icons">
-                            <img src="/src/assets/icons/Insta.svg" alt="" className="footer__icon" />
+                            <a href="https://www.youtube.com/">
+                                <img src="/src/assets/icons/Insta.svg" alt="" className="footer__icon" />
+                            </a>
                             <img src="/src/assets/icons/Facebook.svg" alt="" className="footer__icon" />
                             <img src="/src/assets/icons/Whatsapp.svg" alt="" className="footer__icon" />
                         </div>

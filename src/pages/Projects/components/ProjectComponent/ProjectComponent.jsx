@@ -26,7 +26,7 @@ export default function ProjectComponent({ project }) {
         <div className={s['text-block']}>
           <div className={s['text-wrap']}>
             {(isVisible && !isMobile) && (
-              <span className={s['close-btn']} onClick={handleClick}>Вниз</span>
+              <span className={s['close-btn']} onClick={handleClick}>Закрыть</span>
             )}
               <div className={s['text-row']}>
               <span className={s['text-label']}>{t("cardTitles.projects")}</span>

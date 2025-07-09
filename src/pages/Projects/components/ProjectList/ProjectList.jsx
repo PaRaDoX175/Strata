@@ -9,7 +9,7 @@ export default function ProjectList({ projectArr, filters }) {
     }, [filters, projectArr])
 
     return (
-        <div>
+        <div className={s['wrap']}>
             {filteredProject.map(value => (
                 <div key={value.id} className={s['project-wrap']}>
                     <ProjectComponent project={value}/>

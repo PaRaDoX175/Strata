@@ -34,13 +34,13 @@ const cardArr = [
     }
 ]
 
-export default function ServicesSection() {
+export default function ServicesSection({ id }) {
     const isTablet = useCheckWidth(700)
 
     return (
         <>
         {isTablet ? (
-            <div className="services__container">
+            <div className="services__container" id={id}>
                 <div className="services__container_decor"></div>
                 <div className="services__line">
                     <div className="services-cards">
@@ -56,7 +56,7 @@ export default function ServicesSection() {
             </div>
         </div>  
         ) : (
-            <div className="services__container_mobile">
+            <div className="services__container_mobile" id={id}>
                 <div className="services__container_decor"></div>
                 <div className="services__title_mobile">Услуги</div>
                 <div className="services__serv_mobile">

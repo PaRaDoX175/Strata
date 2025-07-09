@@ -190,6 +190,10 @@
 }
 
 @media (max-width: 500px) {
+  .carousel-container {
+    height: 50vh;
+  }
+
   .text-block {
     top: auto;
     bottom: 0;
