@@ -13,7 +13,7 @@ const cardArr = [
     {
         img: img1, 
         city: 'Алматы',
-        rcComplex: 'ЖК Terra',
+        rcComplex: 'ЖК Braun',
         gridColumn: '1 / 2',
         gridRow: '1 / 7',
         gridColumnMobile: '1 / 2',
@@ -21,8 +21,8 @@ const cardArr = [
     },
     {
         img: img2,
-        city: 'Алматы',
-        rcComplex: 'ЖК Terra',
+        city: 'Астана',
+        rcComplex: 'AIFC',
         gridColumn: '1 / 2',
         gridRow: '7 / 13',
         gridColumnMobile: '2 / 3',
@@ -40,7 +40,7 @@ const cardArr = [
     {
         img: img4,
         city: 'Алматы',
-        rcComplex: 'ЖК Terra',
+        rcComplex: 'Офисный кампус класса A',
         gridColumn: '2 / 4',
         gridRow: '5 / 9',
         gridColumnMobile: '1 / 2',
@@ -49,7 +49,7 @@ const cardArr = [
     {
         img: img5,
         city: 'Алматы',
-        rcComplex: 'ЖК Terra',
+        rcComplex: 'Narxoz',
         gridColumn: '2 / 4',
         gridRow: '9 / 13',
         gridColumnMobile: '2 / 3',
@@ -66,8 +66,8 @@ const cardArr = [
     },
     {
         img: img7,
-        city: 'Алматы',
-        rcComplex: 'ЖК Terra',
+        city: 'Астана',
+        rcComplex: 'P-Project',
         gridColumn: '4 / 5',
         gridRow: '7 / 13',
         gridColumnMobile: '1 / 3',

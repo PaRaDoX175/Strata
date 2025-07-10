@@ -53,7 +53,7 @@ export default function ReviewsSection() {
                     >
                         {t('reviewsSection.reviews', { returnObjects: true }).map((value) => (
                         <SwiperSlide key={value.id}>
-                            <div>
+                            <div className={s['review-content__wrapper']}>
                                 <p>{value.review}</p>
                                 <strong className={s['review-position']}>{value.name}</strong>
                                 <p className={s['review-position']}>{value.position}</p>
