@@ -5,7 +5,9 @@ import s from './ProjectList.module.css'
 export default function ProjectList({ projectArr, filters }) {
     const filteredProject = useMemo(() => {
         if (filters.includes('all')) return projectArr
-        return projectArr.filter(item => filters.includes(item.project.category))
+        return projectArr.filter(item =>
+            item.project.category.some(el => filters.includes(el))
+        )
     }, [filters, projectArr])
 
     return (

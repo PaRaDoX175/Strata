@@ -13,7 +13,7 @@ export default function Contacts() {
             <NavBar img="/src/assets/Logo_dark.svg" colorText="#011329"/>
             <div className={styles['contacts-wrap']}>
                 <div className={styles['text-container']}>
-                <a href="https://2gis.kz/almaty/firm/9429940000794613?m=76.891932%2C43.198411%2F17.85" target="_blank" rel="noopener noreferrer">
+                <a style={{ cursor: 'pointer' }} href="https://2gis.kz/almaty/firm/9429940000794613?m=76.891932%2C43.198411%2F17.85" target="_blank" rel="noopener noreferrer">
                     <div className={styles['text']}>{t('address')}</div>
                 </a>
                 <div className={styles['text']}>+7 (778) 106-22-00</div>
@@ -21,9 +21,15 @@ export default function Contacts() {
                 </div>
                     
                 <div className={styles['icons-container']}>
-                    <img className={styles['icon']} src="/src/assets/icons/Instagram_dark.svg" alt="" />
-                    <img className={styles['icon']} src="/src/assets/icons/Facebook_dark.svg" alt="" />
-                    <img className={styles['icon']} src="/src/assets/icons/Whatsapp-dark.svg" alt="" />
+                    <a style={{ cursor: 'pointer' }} href="https://www.instagram.com/strata.architects?igsh=cXRwOXRlMjAyY3Qy" target="_blank" rel="noopener noreferrer">
+                        <img className={styles['icon']} src="/src/assets/icons/Instagram_dark.svg" alt="" />
+                    </a>
+                    <a style={{ cursor: 'pointer' }} href="https://www.linkedin.com/company/strata-architects-engineers/" target="_blank" rel="noopener noreferrer">
+                        <img className={styles['icon']} src="/src/assets/icons/LinkedInDark.svg" alt="" />
+                    </a>
+                    <a style={{ cursor: 'pointer' }} href="https://wa.me/7781062200" target="_blank" rel="noopener noreferrer">
+                        <img className={styles['icon']} src="/src/assets/icons/Whatsapp-dark.svg" alt="" />
+                    </a>
                 </div>
             </div>
             <div className={styles['footer']}>

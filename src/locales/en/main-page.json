@@ -28,6 +28,36 @@
         "funcCostAnalysis": "Functional cost analysis",
         "projectAnalysis": "Comprehensive project analysis"
     },
+    "projectGrid": {
+        "project1": {
+            "city": "Almaty",
+            "projectName": "RC Braun"
+        },
+        "project2": {
+            "city": "Astana",
+            "projectName": "AIFC"
+        },
+        "project3": {
+            "city": "Astana",
+            "projectName": "Kazakh Drama Theatre"
+        },
+        "project4": {
+            "city": "Almaty",
+            "projectName": "Class A office campus"
+        },
+        "project5": {
+            "city": "Almaty",
+            "projectName": "Narxoz"
+        },
+        "project6": {
+            "city": "Almaty",
+            "projectName": "RC Terra"
+        },
+        "project7": {
+            "city": "Astana",
+            "projectName": "P-Project"
+        }
+    },
     "reviewsSection": {
         "title": "What our clients say",
         "reviews": [
@@ -39,9 +69,9 @@
             },
             {
                 "id": 2,
-                "review": "NAO «Narxoz University» confirms that KZSTRATA LLP developed the draft and working documentation for the reconstruction of the university building (Almaty, Zhandosov St. 55) in the period from 24.07.2020 to 08.04.2021. The work was completed efficiently and on time, in compliance with Kazakhstani legislation and international standards. We note the high professionalism and recommend the company as a reliable designer.",
-                "name": "K.A.Amenova",
-                "position": "Vice-Rector for Administrative Work"
+                "review": "STRATA is a team of professionals who have demonstrated their excellence in adapting the pavilion projects of Germany, Japan, Thailand and Spain for the Astana EXPO 2017 exhibition. The work was carried out accurately, efficiently and in full compliance with the standards of the Republic of Kazakhstan. We recommend them as a reliable and competent partner.",
+                "name": "V.Lyutov",
+                "position": "Deputy Chairman of the Board of JSC «National Company Astana EXPO-2017»"
             },
             {
                 "id": 3,
@@ -51,9 +81,9 @@
             },
             {
                 "id": 4,
-                "review": "NAO «Narxoz University» confirms that KZSTRATA LLP developed the draft and working documentation for the reconstruction of the university building (Almaty, Zhandosov St. 55) in the period from 24.07.2020 to 08.04.2021. The work was completed efficiently and on time, in compliance with Kazakhstani legislation and international standards. We note the high professionalism and recommend the company as a reliable designer.",
-                "name": "K.A.Amenova",
-                "position": "Vice-Rector for Administrative Work"
+                "review": "STRATA is a team of professionals who have demonstrated their excellence in adapting the pavilion projects of Germany, Japan, Thailand and Spain for the Astana EXPO 2017 exhibition. The work was carried out accurately, efficiently and in full compliance with the standards of the Republic of Kazakhstan. We recommend them as a reliable and competent partner.",
+                "name": "V.Lyutov",
+                "position": "Deputy Chairman of the Board of JSC «National Company Astana EXPO-2017»"
             }
         ]
     },

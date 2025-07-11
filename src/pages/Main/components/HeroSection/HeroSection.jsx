@@ -3,7 +3,7 @@ import './HeroSection.css'
 import useCheckWidth from '../../../../hooks/useCheckWidth'
 
 export default function HeroSection() {
-  const isMobile =  useCheckWidth(440)
+  const isMobile =  useCheckWidth(441)
 
   const { t } = useTranslation('main')
 
@@ -27,7 +27,7 @@ export default function HeroSection() {
         </div>
             ) :
           (
-            <div className="hero-section__mobile">
+            <div style={{ paddingTop: 80 }} className="hero-section__mobile">
               <div className="hero-section__image-container_mobile">
             <img
               src="/src/assets/images/grid-1.jpg"

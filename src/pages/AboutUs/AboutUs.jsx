@@ -26,6 +26,7 @@ import Svg16 from "/src/assets/right/6.svg"
 import { useTranslation } from 'react-i18next';
 import ScrollToTop from '/src/ScrollToTop.jsx'
 import Footer from '../../global-components/Footer/Footer';
+import orion_img from '/src/assets/orion.jpg'
 
 export default function AboutUs() {
   const { t } = useTranslation('aboutUs')
@@ -116,7 +117,7 @@ const SVG_SLIDER_RIGHT = [
   <div className={s['wrapper']}>
     <div className={`${s['container']} ${s['direction-row']} ${s['philosophy-section']} ${s['background-color-blue']}`}>
       <div className={s['about-us__img--philosophy']}>
-        <img className={s['about-us__img--polygon']} src={AboutUsImg2} />
+        <img className={s['about-us__img--polygon']} src={orion_img} />
         <img className={s['about-us__img--logo-position']} src={Logo} />
       </div>
       <div className={s['about-us__inner']}>

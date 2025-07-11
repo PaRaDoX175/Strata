@@ -8,7 +8,7 @@
             "commerce": "Commerce",
             "rebuild": "Rebuild",
             "tourism": "Tourism",
-            "masterPlan": "Master plan",
+            "industrialFacilities": "Industrial facilities",
             "education": "Education",
             "other": "Others"
         }
@@ -22,6 +22,8 @@
         "period": "Implementation period",
         "features": "Features"
     },
+    "moreButton": "More",
+    "closeButton": "Close",
     "projects": {
         "project1": {
             "projectName": "Reconstruction of the Narxoz University campus",
@@ -102,6 +104,16 @@
             "square": "8,000 sq.m.",
             "period": "2021-2022",
             "features": "Seismic resistance"
+        },
+        "project11": {
+            "projectName": "Shopping center Retail Park Shymkent",
+            "place": "Shymkent, Kazakhstan",
+            "customer": "Confidential information",
+            "square": "122,000 sq.m.",
+            "period": "2015",
+            "features": "Seismic resistance"
         }
-    }
+    },
+    "footer": "Almaty, 050060, st. Khusainova 281 BC «Granit»",
+    "rights": "© 2025 STRATA. ALL RIGHTS RESERVED."
 }

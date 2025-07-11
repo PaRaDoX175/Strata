@@ -8,9 +8,9 @@ const CATEGORIES = [
     {id: 'commerce'},
     {id: 'rebuild'},
     {id: 'tourism'},
-    {id: 'masterPlan'},
     {id: 'education'},
-    {id: 'other'},
+    {id: 'industrialFacilities'},
+    // {id: 'other'},
 ];
 
 export default function ProjectFilter({ onChange }) {

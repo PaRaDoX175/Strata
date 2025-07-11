@@ -26,7 +26,7 @@ export default function ProjectComponent({ project }) {
         <div className={s['text-block']}>
           <div className={s['text-wrap']}>
             {(isVisible && !isMobile) && (
-              <span className={s['close-btn']} onClick={handleClick}>Закрыть</span>
+              <span className={s['close-btn']} onClick={handleClick}>{t('closeButton')}</span>
             )}
               <div className={s['text-row']}>
               <span className={s['text-label']}>{t("cardTitles.projects")}</span>
@@ -48,17 +48,13 @@ export default function ProjectComponent({ project }) {
               <span className={s['text-label']}>{t("cardTitles.period")}</span>
               <span className={s['text-value']}>{t(`projects.${project.id}.period`)}</span>
             </div>
-            <div className={s['text-row']}>
-              <span className={s['text-label']}>{t("cardTitles.features")}</span>
-              <span className={s['text-value']}>{t(`projects.${project.id}.features`)}</span>
-            </div>
         </div>
         
     </div>
       )}
         
         {!isVisible && (
-          <div className={s['btn-more']} onClick={handleClick}>Подробнее</div>
+          <div className={s['btn-more']} onClick={handleClick}>{t('moreButton')}</div>
         )}
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -67,10 +63,12 @@ export default function ProjectComponent({ project }) {
         loop={true}
         
         onInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
-          swiper.navigation.init();
-          swiper.navigation.update();
+          if (project.project.images.length > 1) {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }
         }}
       >
         {project.project.images.map((src, i) => (
@@ -81,10 +79,19 @@ export default function ProjectComponent({ project }) {
           </SwiperSlide>
         ))}
 
-        <div ref={prevRef} className={`swiper-button-prev`} >
-        </div>
-        <div ref={nextRef} className={` swiper-button-next`}>
-        </div>
+        {project.project.images.length > 1 && (
+          <>
+            <div
+              ref={prevRef}
+              className={`swiper-button-prev ${isVisible && !isMobile ? s['hidden'] : ''}`}
+            />
+            <div
+              ref={nextRef}
+              className={`swiper-button-next ${isVisible && !isMobile ? s['hidden'] : ''}`}
+            />
+          </>
+        )}
+
       </Swiper>
     </div>
   );

@@ -26,11 +26,15 @@ export default function Footer() {
                 <div className="footer__rights">
                         <div className='rights'>{t('rights')}</div>
                         <div className="footer__icons">
-                            <a className='footer__info_a' href="#">
+                            <a  className='footer__info_a' href="https://www.instagram.com/strata.architects?igsh=cXRwOXRlMjAyY3Qy" target="_blank" rel="noopener noreferrer">
                                 <img src="/src/assets/icons/Insta.svg" alt="" className="footer__icon" />
                             </a>
-                            <img src="/src/assets/icons/Facebook.svg" alt="" className="footer__icon" />
-                            <img src="/src/assets/icons/Whatsapp.svg" alt="" className="footer__icon" />
+                            <a className='footer__info_a' href="https://www.linkedin.com/company/strata-architects-engineers/" target="_blank" rel="noopener noreferrer">
+                                <img src="/src/assets/icons/LinkedIn.svg" alt="" className="footer__icon" />
+                            </a>
+                            <a className='footer__info_a' href="https://wa.me/7781062200" target="_blank" rel="noopener noreferrer">
+                                <img src="/src/assets/icons/Whatsapp.svg" alt="" className="footer__icon" />
+                            </a>
                         </div>
                 </div>
             </div>
@@ -41,18 +45,25 @@ export default function Footer() {
                     <div className="footer__info">
                         <div className="icon_text">
                             <div className="footer__info_text">+7 (778) 106-22-00</div>
-                            <img src="/src/assets/icons/Insta.svg" alt="" className="footer__icon" />
+                            <a style={{ cursor: 'pointer' }} href="https://www.instagram.com/strata.architects?igsh=cXRwOXRlMjAyY3Qy" target="_blank" rel="noopener noreferrer">
+                                <img src="/src/assets/icons/Insta.svg" alt="" className="footer__icon" />
+                            </a>
                         </div>
                         <div className="icon_text">
                             <div className="footer__info_text">info@strata.kz</div>
-                            <img src="/src/assets/icons/Facebook.svg" alt="" className="footer__icon" />
+                            
+                            <a style={{ cursor: 'pointer' }} href="https://www.linkedin.com/company/strata-architects-engineers/" target="_blank" rel="noopener noreferrer">
+                                <img src="/src/assets/icons/LinkedIn.svg" alt="" className="footer__icon" />
+                            </a>
                         </div>
                         <div className="icon_text">
                         <a style={{ cursor: 'pointer' }} href="https://2gis.kz/almaty/firm/9429940000794613?m=76.891932%2C43.198411%2F17.85" target="_blank" rel="noopener noreferrer">
 
                             <div className="footer__info_text">{t('footer')}</div>
                         </a>
-                            <img src="/src/assets/icons/Whatsapp.svg" alt="" className="footer__icon" />
+                        <a style={{ cursor: 'pointer' }} href="https://wa.me/7781062200" target="_blank" rel="noopener noreferrer">
+                                <img src="/src/assets/icons/Whatsapp.svg" alt="" className="footer__icon" />
+                            </a>
                         </div>
                         
                         

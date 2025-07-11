@@ -74,9 +74,29 @@ export default function NavBar({ img, colorText }) {
             <div className="language-container">
               <div className="lang-switch" onClick={handleChangeMenu}>
                 <div className="slider" style={{ color: `${colorText}` }}>
-                  <div className="slide__text--1">Қазақша</div>
-                  <div className="slide__text--2">English</div>
-                  <div className="slide__text--3">Русский</div>
+                <div className="slide__text--1">
+                                        Русский
+                                    </div>
+                                    <div className="slide__text--2">
+                                        English
+                                    </div>
+                                    <div className="slide__text--3">
+                                        Русский
+                                    </div>
+                                    <div className="slide__text--2">
+                                        English
+                                    </div>
+
+
+                                    {/* <div className="slide__text--1">
+                                        Қазақша
+                                    </div>
+                                    <div className="slide__text--2">
+                                        English
+                                    </div>
+                                    <div className="slide__text--3">
+                                        Русский
+                                    </div> */}
                 </div>
               </div>
 
@@ -85,9 +105,10 @@ export default function NavBar({ img, colorText }) {
                   <p className="selected" onClick={() => {changeLanguage("ru")
                     handleChangeMenu()
                   }}>Рус</p>
-                  <p onClick={() => {changeLanguage("kz")
-                    handleChangeMenu()
-                  }}>Қаз</p>
+
+{/* <p className="selected" onClick={() => {changeLanguage("kz")
+                  handleChangeMenu()
+                }}>Каз</p> */}
                   <p onClick={() => {changeLanguage("en")
                     handleChangeMenu()
                   }}>Eng</p>
@@ -105,9 +126,18 @@ export default function NavBar({ img, colorText }) {
             <div className="language-container">
               <div className="lang-switch" onClick={handleChangeMenu}>
                 <div className="slider">
-                  <div className="slide__text--1">Қазақша</div>
-                  <div className="slide__text--2">English</div>
-                  <div className="slide__text--3">Русский</div>
+                <div className="slide__text--1">
+                    Русский
+                </div>
+                <div className="slide__text--2">
+                    English
+                </div>
+                <div className="slide__text--3">
+                    Русский
+                </div>
+                <div className="slide__text--4">
+                    English
+                </div>
                 </div>
               </div>              
             </div>
@@ -116,9 +146,9 @@ export default function NavBar({ img, colorText }) {
                 <p className="selected" onClick={() => {changeLanguage("ru")
                   handleChangeMenu()
                 }}>Рус</p>
-                <p onClick={() => {changeLanguage("kz")
+                {/* <p className="selected" onClick={() => {changeLanguage("kz")
                   handleChangeMenu()
-                }}>Қаз</p>
+                }}>Каз</p> */}
                 <p onClick={() => {changeLanguage("en")
                   handleChangeMenu()
                 }}>Eng</p>
