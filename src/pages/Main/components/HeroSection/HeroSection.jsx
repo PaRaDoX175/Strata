@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import './HeroSection.css'
+import img1 from '/src/assets/images/hero_section.jpg'
+import img2 from "/src/assets/images/grid-1.jpg"
 import useCheckWidth from '../../../../hooks/useCheckWidth'
 
 export default function HeroSection() {
@@ -13,7 +15,7 @@ export default function HeroSection() {
         <div className="hero-section">
           <div className="hero-section__image-container">
             <img
-              src="/src/assets/images/hero_section.jpg"
+              src={img1}
               alt="Image"
               className="hero-section__image"
             />
@@ -30,7 +32,7 @@ export default function HeroSection() {
             <div style={{ paddingTop: 80 }} className="hero-section__mobile">
               <div className="hero-section__image-container_mobile">
             <img
-              src="/src/assets/images/grid-1.jpg"
+              src={img2}
               alt="Image"
               className="hero-section__image_mobile"
             />

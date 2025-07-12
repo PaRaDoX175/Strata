@@ -7,6 +7,7 @@ import { projectArr } from './projectsArr'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import ProjectFooter from './components/ProjectFooter/ProjectFooter'
+import logo from "/src/assets/Logo.svg"
 
 export default function Projects() {
     const { t } = useTranslation('projects')
@@ -17,7 +18,7 @@ export default function Projects() {
           <ScrollToTop/>
             <div className={styles['background']}></div>
             <div className={styles['content']}>
-                <NavBar img="/src/assets/Logo.svg" colorText="white"/>
+                <NavBar img={logo} colorText="white"/>
 
                 <ProjectFilter onChange={setActive}/>
 

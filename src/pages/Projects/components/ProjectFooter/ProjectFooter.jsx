@@ -1,6 +1,9 @@
 import useCheckWidth from '/src/hooks/useCheckWidth';
 import s from './ProjectFooter.module.css'
 import img from '/src/assets/Logo.svg'
+import insta from "/src/assets/icons/Insta.svg"
+import li from "/src/assets/icons/LinkedIn.svg"
+import whatsapp from "/src/assets/icons/Whatsapp.svg"
 import { useTranslation } from 'react-i18next';
 
 export default function ProjectFooter() {
@@ -25,13 +28,13 @@ export default function ProjectFooter() {
                         <div className={s['rights']}>{t('rights')}</div>
                         <div className={s["footer__icons"]}>
                             <a className={s['footer__info_a']} href="https://www.instagram.com/strata.architects?igsh=cXRwOXRlMjAyY3Qy" target="_blank" rel="noopener noreferrer">
-                                <img src="/src/assets/icons/Insta.svg" alt="" className={s["footer__icon"]} />
+                                <img src={insta} alt="" className={s["footer__icon"]} />
                             </a>
                             <a className={s['footer__info_a']} href="https://www.linkedin.com/company/strata-architects-engineers/" target="_blank" rel="noopener noreferrer">
-                                <img src="/src/assets/icons/LinkedIn.svg" alt="" className={s["footer__icon"]} />
+                                <img src={li} alt="" className={s["footer__icon"]} />
                             </a>
                             <a className={s['footer__info_a']} href="https://wa.me/7781062200" target="_blank" rel="noopener noreferrer">
-                                <img src="/src/assets/icons/Whatsapp.svg" alt="" className={s["footer__icon"]} />
+                                <img src={whatsapp} alt="" className={s["footer__icon"]} />
                             </a>
                         </div>
                 </div>
@@ -45,14 +48,14 @@ export default function ProjectFooter() {
                             <div className={s["footer__info_text"]}>+7 (778) 106-22-00</div>
                             <a style={{ cursor: 'pointer' }} href="https://www.instagram.com/strata.architects?igsh=cXRwOXRlMjAyY3Qy" target="_blank" rel="noopener noreferrer">
                             
-                                <img src="/src/assets/icons/Insta.svg" alt="" className={s["footer__icon"]} />
+                                <img src={insta} alt="" className={s["footer__icon"]} />
                             </a>
                         </div>
                         <div className={s["icon_text"]}>
                             <div className={s["footer__info_text"]}>info@strata.kz</div>
                             <a style={{ cursor: 'pointer' }} href="https://www.linkedin.com/company/strata-architects-engineers/" target="_blank" rel="noopener noreferrer">
                             
-                                <img src="/src/assets/icons/LinkedIn.svg" alt="" className={s["footer__icon"]} />
+                                <img src={li} alt="" className={s["footer__icon"]} />
                             </a>
                         </div>
                         <div className={s["icon_text"]}>
@@ -61,7 +64,7 @@ export default function ProjectFooter() {
                             </a>
                             <a style={{ cursor: 'pointer' }} href="https://wa.me/7781062200" target="_blank" rel="noopener noreferrer">
                             
-                                <img src="/src/assets/icons/Whatsapp.svg" alt="" className={s["footer__icon"]} />
+                                <img src={whatsapp} alt="" className={s["footer__icon"]} />
                             </a>
                         </div>
                         

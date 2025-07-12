@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules';
 import { useRef } from 'react';
+import btn1 from "/src/assets/icons/left_arrow.svg"
+import btn2 from "/src/assets/icons/right_arrow.svg"
 import s from './ReviewsSection.module.css'
 import 'swiper/css'
 import 'swiper/css/navigation';
@@ -61,10 +63,10 @@ export default function ReviewsSection() {
                         </SwiperSlide>
                         ))}
                         <div ref={leftButton} className={s['left-button']}>
-                            <img src="/src/assets/icons/left_arrow.svg" alt="" />
+                            <img src={btn1} alt="" />
                         </div>
                         <div ref={rightButton} className={s['right-button']}>
-                            <img src="/src/assets/icons/right_arrow.svg" alt="" />
+                            <img src={btn2} alt="" />
                         </div>
                     </Swiper>
                 </div>

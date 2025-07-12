@@ -7,6 +7,7 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 import ReviewsSection from './components/ReviewsSection/ReviewsSection'
 import {  useLocation } from 'react-router-dom'
 import { useEffect } from 'react';
+import logo from "/src/assets/Logo.svg"
 import ServicesSection from './components/ServicesSection/ServicesSection'
 import '/src/i18n'
 import ScrollToTop from '/src/ScrollToTop.jsx'
@@ -31,7 +32,7 @@ export default function Main() {
           <ScrollToTop/>
           <div className="background"></div>
           <div className="content">
-            <NavBar img="/src/assets/Logo.svg" colorText="white"/>
+            <NavBar img={logo} colorText="white"/>
             <HeroSection/>
             <FactsSection/>
             <ProjectsSection/>

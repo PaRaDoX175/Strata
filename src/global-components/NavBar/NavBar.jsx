@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './NavBar.css'
 import useCheckWidth from '/src/hooks/useCheckWidth';
+import img2 from "/src/assets/Logo.svg"
 import { useTranslation } from 'react-i18next'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 
@@ -161,7 +162,7 @@ export default function NavBar({ img, colorText }) {
             {isMenuOpen && !isMobile && 
             
             <Link to={'/'}>
-              <img src="/src/assets/Logo.svg" alt="Logo" className="nav-bar__logo_mobile" />
+              <img src={img2} alt="Logo" className="nav-bar__logo_mobile" />
             </Link>
               
             }

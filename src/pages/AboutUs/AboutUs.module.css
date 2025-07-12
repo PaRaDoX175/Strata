@@ -2,12 +2,6 @@
   position: relative;
   padding-top: 100px;
   height: auto;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    ),
-    url("src/assets/backgound_about_us.png") 50% / cover no-repeat;
   overflow-x: hidden;
 }
 

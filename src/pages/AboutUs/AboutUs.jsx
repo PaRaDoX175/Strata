@@ -3,7 +3,6 @@ import React from 'react';
 import s from './AboutUs.module.css'
 import NavBar from '../../global-components/NavBar/NavBar';
 import AboutUsImg from "/src/assets/2.jpg"
-import AboutUsImg2 from "/src/assets/About_us_2.jpg"
 import AboutUsImg3 from "/src/assets/Partners.svg"
 import Logo from "/src/assets/Strata_mini_logo.svg"
 
@@ -27,6 +26,9 @@ import { useTranslation } from 'react-i18next';
 import ScrollToTop from '/src/ScrollToTop.jsx'
 import Footer from '../../global-components/Footer/Footer';
 import orion_img from '/src/assets/orion.jpg'
+import logo from "/src/assets/Logo.svg"
+
+import backgroundImage from "../../assets/backgound_about_us.png"
 
 export default function AboutUs() {
   const { t } = useTranslation('aboutUs')
@@ -99,8 +101,9 @@ const SVG_SLIDER_RIGHT = [
     return (
       <>
         <ScrollToTop/>
-        <div className={s['about-us-wrapper']}>
-          <NavBar img="/src/assets/Logo.svg" colorText="white"/>
+        <div className={s['about-us-wrapper']} style={{
+    background: `linear-gradient(  0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100% ), url(${backgroundImage}) 50% / cover no-repeat`}}>
+          <NavBar img={logo} colorText="white"/>
               <div className={s['wrapper']}>
     <div className={s['container'] + ' ' + s['main-section']}>
       <div className={s['about-us__content']}>
@@ -109,7 +112,7 @@ const SVG_SLIDER_RIGHT = [
         ))}
       </div>
       <div className={s['about-us__img']}>
-        <img src={AboutUsImg} />
+        <img src={AboutUsImg}/>
       </div>
     </div>
   </div>
